@@ -16,7 +16,7 @@ func AddIntegers(a int, b int) int {
 	return a + b
 }
 
-func CountDigits(number int) int {
+func SumDigits(number int) int {
 	tmp := number
 	s := 0
 

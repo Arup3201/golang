@@ -15,7 +15,7 @@ func main() {
 
 	// basic - count digits in a number
 	// num := 125
-	// count := basic.CountDigits(num)
+	// count := basic.SumDigits(num)
 	// fmt.Printf("Digits in %d: %d\n", num, count)
 
 	// array Search1DArray
