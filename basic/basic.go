@@ -15,3 +15,15 @@ func Swap(a *int, b *int) {
 func AddIntegers(a int, b int) int {
 	return a + b
 }
+
+func CountDigits(number int) int {
+	tmp := number
+	s := 0
+
+	for tmp != 0 {
+		s += tmp % 10
+		tmp /= 10
+	}
+
+	return s
+}
