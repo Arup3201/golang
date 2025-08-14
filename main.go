@@ -1,6 +1,9 @@
 package main
 
-import "golang/learning/basic"
+import (
+	"fmt"
+	"golang/learning/basic"
+)
 
 func main() {
 	// basic - hello world
@@ -10,7 +13,11 @@ func main() {
 	// basic.GreetUser()
 
 	// basic - greet Bob/Alice
-	basic.GreetBobOrAlice()
+	// basic.GreetBobOrAlice()
+
+	// basic - sum of 1-n
+	n := 20
+	fmt.Printf("Sum of 1-%d: %d\n", n, basic.SumN(n))
 
 	// basic - swap
 	// var a, b int = 5, 10
