@@ -9,6 +9,10 @@ func main() {
 	// basic.Swap(&a, &b)
 	// fmt.Println(a, b)
 
+	// basic - add 2 numbers
+	// sum := basic.AddIntegers(2, 4)
+	// fmt.Println("Sum: ", sum)
+
 	// array Search1DArray
 	// a := []int{2, 4, 1, 6, 10, 8}
 	// index := array.Search1DArray(a, 10)

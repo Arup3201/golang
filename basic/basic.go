@@ -7,8 +7,11 @@ func PrintHelloWorld() {
 }
 
 func Swap(a *int, b *int) {
-	var temp int
-	temp = *a
+	temp := *a
 	*a = *b
 	*b = temp
+}
+
+func AddIntegers(a int, b int) int {
+	return a + b
 }
