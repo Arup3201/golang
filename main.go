@@ -1,8 +1,13 @@
 package main
 
+import "golang/learning/basic"
+
 func main() {
 	// basic - hello world
 	// basic.PrintHelloWorld()
+
+	// basic - greet user
+	basic.GreetUser()
 
 	// basic - swap
 	// var a, b int = 5, 10

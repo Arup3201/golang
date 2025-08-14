@@ -1,9 +1,19 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func PrintHelloWorld() {
 	fmt.Println("Hello World")
+}
+
+func GreetUser() {
+	var w string
+	fmt.Print("Enter your name: ")
+	fmt.Scanln(&w)
+
+	fmt.Printf("Hello %s\n", w)
 }
 
 func Swap(a *int, b *int) {
