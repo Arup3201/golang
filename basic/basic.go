@@ -16,6 +16,19 @@ func GreetUser() {
 	fmt.Printf("Hello %s\n", w)
 }
 
+func GreetBobOrAlice() {
+	var w string
+	fmt.Print("Enter your name: ")
+	fmt.Scanln(&w)
+
+	if w == "Alice" || w == "Bob" {
+		fmt.Printf("Hello %s\n", w)
+	} else {
+		fmt.Printf("Hello")
+	}
+
+}
+
 func Swap(a *int, b *int) {
 	temp := *a
 	*a = *b

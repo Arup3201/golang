@@ -7,7 +7,10 @@ func main() {
 	// basic.PrintHelloWorld()
 
 	// basic - greet user
-	basic.GreetUser()
+	// basic.GreetUser()
+
+	// basic - greet Bob/Alice
+	basic.GreetBobOrAlice()
 
 	// basic - swap
 	// var a, b int = 5, 10
