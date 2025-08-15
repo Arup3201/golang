@@ -1,9 +1,5 @@
 package main
 
-/*
-GOROOT is where the Go is installed in the system, it contains Go compiler, standard library and tools.
-*/
-
 import (
 	"fmt"
 	"os"
