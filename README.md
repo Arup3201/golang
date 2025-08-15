@@ -11,7 +11,7 @@ Programs:
 - [echo1](./echo1/main.go)
 - [echo2](./echo2/main.go)
 
-**GOROOT, GOPATH, GOOS and GOARCH**
+**Env Variables**
 
 `GOROOT` is the location where the Go programming language is installed on your system. It contains standard library location (`$GOROOT/src`), Go compiles and toolchain (`go build`, `go run`, `go fmt`, `go test`, `go mod` etc) and also platform specific binaries of the standard library files(`$GOROOT/pkg`).
 
@@ -61,3 +61,5 @@ Modules introduced a new concept - the module cache (usually at `$GOPATH/pkg/mod
 Programs:
 
 - [goroot](./goroot/main.go)
+- [goarch](./goarch/main.go)
+- [goos](./goarch/main.go)
