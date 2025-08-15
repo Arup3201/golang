@@ -50,6 +50,14 @@ It contains
 
 Modules introduced a new concept - the module cache (usually at `$GOPATH/pkg/mod` or `$HOME/go/pkg/mod`).
 
+`GOARCH` is the systems architecture on which Go program is running. There are multiple types of architecture -
+
+- `amd64`
+- `arm64`
+- `386`
+- `ppc64le`
+- many more...
+
 Programs:
 
 - [goroot](./goroot/main.go)
