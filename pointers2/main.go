@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-func incr(v *int) {
-	*v = *v + 1
+func incr(p *int) int {
+	*p++
+	return *p
 }
 
 func main() {
