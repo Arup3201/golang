@@ -76,6 +76,24 @@ In a `:=` declaration a variable v may appear even if it has already been declar
 - the corresponding value in the initialization is assignable to v, and
 - there is at least one other variable that is created by the declaration.
 
+**Slices**
+
+*Why two slices can't be compared using `==` operator?*
+
+If we could use == for slices, then it would be confusing for go users to understand the purpose. Some might want to check which elements are present in the slice while others might think it is checking whether 2 slice has the same address. To avoid this confusion, they are not allowing == between 2 slices. 
+
+But they allow == with nil to check whether the slice is nil-slice or not. It is important because both nil-slice and non-nil empty slice has len 0, so we can't use len for checking that. This is what I understood.
+
+*Why we need to return a slice from a function that modified the slice?*
+
+When we pass the slice to a function, we need to return the slice if we are modifying the slice inside the function. 
+
+Golang pass the parameters by copying the values of the arguments. It is not passing their reference. So when we pass the slice, we are passing a copy of the slice structure. It means it's pointer to the array, cap and len. 
+
+If we modify the slice by appending something to the slice, then at one point golang might create a new slice because the old slice can't accomodate the growing capacity which also changes it's capacity and len. If that happens, it will start pointing to another address. 
+
+If we don't return this new slice, and use the same slice that we passed to this function, then the slice actually points to the previous slice and not the modified slice - which is not correct and will give the same result as if we never modified it.
+
 **References**
 
 - [How To Debug Go Code with Visual Studio Code](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
