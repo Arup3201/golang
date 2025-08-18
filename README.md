@@ -104,3 +104,4 @@ If we don't return this new slice, and use the same slice that we passed to this
 - [Demystifying Golang Slices](https://medium.com/@andreiboar/demystifying-golang-slices-83ffe3550db5)
 - [How to Compare Slice Equality in Go](https://freshman.tech/snippets/go/compare-slices/)
 - [They're called Slices because they have Sharp Edges: Even More Go Pitfalls](https://www.dolthub.com/blog/2023-10-20-golang-pitfalls-3/)
+- [How UTF-8 works in Go?](https://pandulaofficial.medium.com/unicode-utf-8-explained-with-examples-using-go-5f8b7f4521d)
