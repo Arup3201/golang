@@ -64,9 +64,13 @@ Programs:
 - [goarch](./goarch/main.go)
 - [goos](./goarch/main.go)
 
+**Go Modules**
+
+[How to upgrade your Go module?](https://go.dev/blog/using-go-modules)
+
 **Note about `:=` operator**
 
-In a := declaration a variable v may appear even if it has already been declared, provided:
+In a `:=` declaration a variable v may appear even if it has already been declared, provided:
 
 - this declaration is in the same scope as the existing declaration of v (if v is already declared in an outer scope, the declaration will create a new variable §),
 - the corresponding value in the initialization is assignable to v, and
