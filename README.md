@@ -75,3 +75,14 @@ In a `:=` declaration a variable v may appear even if it has already been declar
 - this declaration is in the same scope as the existing declaration of v (if v is already declared in an outer scope, the declaration will create a new variable §),
 - the corresponding value in the initialization is assignable to v, and
 - there is at least one other variable that is created by the declaration.
+
+**References**
+
+- [How To Debug Go Code with Visual Studio Code](https://www.digitalocean.com/community/tutorials/debugging-go-code-with-visual-studio-code)
+- [Graceful Shutdown in Go: Practical Patterns](https://victoriametrics.com/blog/go-graceful-shutdown/)
+- [Using Go Modules](https://go.dev/blog/using-go-modules)
+- [Go Modules vs Package](https://stackoverflow.com/questions/61940117/go-modules-vs-package)
+- [How to fix parsing go.mod module declares its path as "x" but was required as "y"](https://stackoverflow.com/questions/61311436/how-to-fix-parsing-go-mod-module-declares-its-path-as-x-but-was-required-as-y)
+- [Demystifying Golang Slices](https://medium.com/@andreiboar/demystifying-golang-slices-83ffe3550db5)
+- [How to Compare Slice Equality in Go](https://freshman.tech/snippets/go/compare-slices/)
+- [They're called Slices because they have Sharp Edges: Even More Go Pitfalls](https://www.dolthub.com/blog/2023-10-20-golang-pitfalls-3/)
