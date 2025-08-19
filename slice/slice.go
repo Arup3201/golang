@@ -55,3 +55,13 @@ func Remove(s []int, i int) []int {
 	copy(s[i:], s[i+1:])
 	return s[:len(s)-1]
 }
+
+func doSomething(s []int) []int {
+	s = append(s, 1)
+	return s
+}
+
+func SubtractOneFromLength(s []int) []int {
+	s = s[0 : len(s)-1]
+	return s
+}

@@ -1,6 +1,9 @@
 package slice
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestGetCommon(t *testing.T) {
 	months := []string{
@@ -85,4 +88,31 @@ func TestRemove(t *testing.T) {
 	if got := Remove(s, 2); !Equal(got, want) {
 		t.Errorf("Remove(s)=%x, want %x", got, want)
 	}
+}
+
+func IncreaseByOne(s []int) {
+	for i, e := range s {
+		s[i] = e + 1
+	}
+}
+
+func TestIncreaseByOne(t *testing.T) {
+	slice := []int{1, 2, 3, 4, 5}
+	IncreaseByOne(slice)
+	for _, e := range slice {
+		fmt.Println(e)
+	}
+}
+
+func TestSubtractOneFromLength(t *testing.T) {
+	slice := []int{1, 2, 3, 4, 5}
+	slice = SubtractOneFromLength(slice)
+	fmt.Println(slice)
+}
+
+func TestSlicePass(t *testing.T) {
+	s := make([]int, 0, 2)
+
+	s = doSomething(s)
+	fmt.Println(s)
 }
