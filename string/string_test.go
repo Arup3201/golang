@@ -29,7 +29,10 @@ func TestRawString(t *testing.T) {
 		go command [arguments]
 		...`
 
-	t.Log(GoUsage)
+	want := "string"
+	if got := fmt.Sprintf("%T", GoUsage); got != want {
+		t.Errorf("type expected %s, got %s", want, got)
+	}
 }
 
 func TestUTF8Rune(t *testing.T) {
@@ -44,13 +47,9 @@ func TestUTF8Rune(t *testing.T) {
 func TestStringIndex(t *testing.T) {
 	str := "Hello, world"
 	strByte := str[0]
-	fmt.Printf("%T", strByte)
-}
 
-func TestStringLoop(t *testing.T) {
-	const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
-
-	for i := range len(sample) {
-		fmt.Printf("%#U", sample[i])
+	want := "uint8"
+	if got := fmt.Sprintf("%T", strByte); got != want {
+		t.Errorf("type expected %s, got %s", want, got)
 	}
 }
