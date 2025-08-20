@@ -108,3 +108,5 @@ If we don't return this new slice, and use the same slice that we passed to this
 - [How UTF-8 works in Go?](https://pandulaofficial.medium.com/unicode-utf-8-explained-with-examples-using-go-5f8b7f4521d)
 - [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 - [Strings, bytes, runes and characters in Go](https://go.dev/blog/strings)
+- [Go Structs and Interfaces Made Simple](https://getstream.io/blog/go-structs-interfaces/)
+- [Interface methods](https://go.dev/doc/effective_go#interface_methods)
