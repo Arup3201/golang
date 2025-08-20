@@ -1,0 +1,5 @@
+/usr/go/a.go
+/usr/go/b.c.d.go
+/usr/go/c.go
+/usr/local/go/pkg/os
+/usr/local/go/src/fmt/fmt.go
