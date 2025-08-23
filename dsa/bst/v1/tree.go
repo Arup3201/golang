@@ -58,17 +58,17 @@ func (t *Tree) ShiftNodes(u, v *Node) {
 
 func (t *Tree) Delete(z *Node) {
 	if z.Left==nil {
-		t.ShiftTree(z, z.Right)
+		t.ShiftNodes(z, z.Right)
 	} else if z.Right==nil {
-		t.ShiftTree(z, z.Left)
+		t.ShiftNodes(z, z.Left)
 	} else {
 		y, _ := z.Successor()
 		if y.Parent!=z{
-			t.ShiftTree(y, y.Right)
+			t.ShiftNodes(y, y.Right)
 			y.Right=z.Right
 			y.Right.Parent=y
 		}
-		t.ShiftTree(z, y)
+		t.ShiftNodes(z, y)
 		y.Left = z.Left
 		y.Left.Parent=y
 	}
