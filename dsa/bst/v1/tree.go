@@ -30,6 +30,7 @@ func (t *Tree) Insert(z *Node) {
 		}
 	}
 
+	z.Parent = y
 	if y!=nil{
 		if z.Value > y.Value {
 			y.Right = z
@@ -41,7 +42,7 @@ func (t *Tree) Insert(z *Node) {
 	}
 }
 
-func (t *Tree) ShiftTree(u, v *Node) {
+func (t *Tree) ShiftNodes(u, v *Node) {
 	if u.Parent==nil{
 		t.Root = v
 	} else if u.Parent.Right==u {

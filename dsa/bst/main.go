@@ -8,7 +8,8 @@ import (
 
 func main() {
 	tree := bst.NewTree()
-	entries := []int{20, 15, 25, 40, 10, 12, 23, 8, 13, 16, 1, 30}
+	// entries := []int{20, 15, 25, 40, 10, 12, 23, 8, 13, 16, 1, 30}
+	entries := []int{25, 40, 30, 29, 26}
 
 	var node *bst.Node
 	for _, entry := range entries {
@@ -21,7 +22,8 @@ func main() {
 		tree.Print()
 	}
 
-	searches := []int{1, 8, 30, 50}
+	// searches := []int{1, 8, 30, 50}
+	searches := []int{29, 26}
 	for _, search := range searches {
 		fmt.Printf("Searching %d\n", search)
 		_, ok := tree.Search(search)
@@ -34,7 +36,7 @@ func main() {
 	}
 
 
-	deletes := []int{40, 10}
+	deletes := []int{25}
 	for _, term := range deletes {
 		fmt.Printf("Deleting %d\n", term)
 		node, ok := tree.Search(term)
