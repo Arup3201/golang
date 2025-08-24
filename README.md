@@ -110,3 +110,5 @@ If we don't return this new slice, and use the same slice that we passed to this
 - [Strings, bytes, runes and characters in Go](https://go.dev/blog/strings)
 - [Go Structs and Interfaces Made Simple](https://getstream.io/blog/go-structs-interfaces/)
 - [Interface methods](https://go.dev/doc/effective_go#interface_methods)
+- [The Laws of Reflection](https://go.dev/blog/laws-of-reflection)
+- [Reflection in Go](https://medium.com/capital-one-tech/learning-to-use-go-reflection-822a0aed74b7)
