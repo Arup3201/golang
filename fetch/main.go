@@ -1,8 +1,8 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -22,14 +22,13 @@ func main() {
 			return
 		}
 
-		b, err := ioutil.ReadAll(resp.Body)
-
-		resp.Body.Close()
-
-		if err != nil {
-			log.Fatalf("reading error: %s", err)
+		scanner := bufio.NewScanner(resp.Body)
+		b := ""
+		for scanner.Scan() {
+			b += scanner.Text()
 		}
 
+		resp.Body.Close()
 		fmt.Printf("%s\n", b)
 	}
 }
